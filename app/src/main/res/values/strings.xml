@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Design 2</string>
+    <string name="th_b_y_10_th_ng_09">Thứ Bảy, 10 Tháng 09</string>
+    <string name="ch_nh_t_11_th_ng_09">Chủ Nhật, 11 Tháng 09</string>
+    <string name="tu_n_n_y">Tuần này</string>
+    <string name="ghi_chu">Ghi chu</string>
+
+    <string-array name="fruit_array">
+        <item>Apple</item>
+        <item>Mangoes</item>
+        <item>banana</item>
+        <item>grapes</item>
+        <item>watermelon</item>
+        <item>strawberry</item>
+        <item>oranges</item>
+    </string-array>
+</resources>
+
+
