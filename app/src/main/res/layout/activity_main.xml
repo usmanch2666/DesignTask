@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -57,18 +58,20 @@
             android:layout_width="345dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp">
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginStart="11dp"
-                android:text="Đi chạy bộ"
+                android:text="Title"
                 android:fontFamily="@font/inter"
                 android:textSize="16sp"/>
             
             <ImageButton
+                android:id="@+id/edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit"
@@ -83,7 +86,7 @@
                 android:background="@color/white"
                 android:layout_marginStart="305dp"
                 android:layout_marginTop="27dp"/>
-            
+
             <androidx.cardview.widget.CardView
                 android:layout_width="80dp"
                 android:layout_height="25dp"
@@ -91,26 +94,23 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginBottom="12dp"
                 android:backgroundTint="@color/light">
-
                 <TextView
-                    android:layout_width="27dp"
-                    android:layout_height="17dp"
+                    android:id="@+id/ititle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/inter"
                     android:textSize="14sp"
                     android:text="Thấp"
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="4dp"/>
-
             </androidx.cardview.widget.CardView>
-
-
         </com.google.android.material.card.MaterialCardView>
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cd2"
             android:layout_width="345dp"
             android:layout_height="80dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp">
 
             <TextView
@@ -118,11 +118,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginStart="11dp"
-                android:text="Đi chạy bộ"
+                android:text="Desc"
                 android:fontFamily="@font/inter"
                 android:textSize="16sp"/>
 
             <ImageButton
+                android:id="@+id/edit2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit"
@@ -147,8 +148,9 @@
                 android:backgroundTint="@color/light">
 
                 <TextView
-                    android:layout_width="27dp"
-                    android:layout_height="17dp"
+                    android:id="@+id/idisc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/inter"
                     android:textSize="14sp"
                     android:text="Thấp"
@@ -163,6 +165,7 @@
             android:id="@+id/cd3"
             android:layout_width="345dp"
             android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp">
 
@@ -171,11 +174,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginStart="11dp"
-                android:text="Đi chạy bộ"
+                android:text="Category"
                 android:fontFamily="@font/inter"
                 android:textSize="16sp"/>
 
             <ImageButton
+                android:id="@+id/edit3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit"
@@ -200,8 +204,9 @@
                 android:backgroundTint="@color/light">
 
                 <TextView
-                    android:layout_width="27dp"
-                    android:layout_height="17dp"
+                    android:id="@+id/icategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/inter"
                     android:textSize="14sp"
                     android:text="Thấp"
@@ -241,11 +246,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginStart="11dp"
-            android:text="Đi chạy bộ"
+            android:text="Date"
             android:fontFamily="@font/inter"
             android:textSize="16sp"/>
 
         <ImageButton
+            android:id="@+id/edit4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/edit"
@@ -270,8 +276,9 @@
             android:backgroundTint="@color/light">
 
             <TextView
-                android:layout_width="27dp"
-                android:layout_height="17dp"
+                android:id="@+id/idate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/inter"
                 android:textSize="14sp"
                 android:text="Thấp"
@@ -283,10 +290,13 @@
     </com.google.android.material.card.MaterialCardView>
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:id="@+id/addbtn"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:src="@drawable/add"
         android:background="@color/white"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
